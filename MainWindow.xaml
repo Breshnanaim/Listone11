@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnAddItem" Content="Add Item" HorizontalAlignment="Left" Margin="189,8,0,0" VerticalAlignment="Top" Click="btnAddItem_Click"/>
+        <TextBox x:Name="txtAddItem" HorizontalAlignment="Left" Margin="30,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="17"/>
+        <Button x:Name="btnDisplay" Content="Display" HorizontalAlignment="Left" Margin="189,65,0,0" VerticalAlignment="Top" Click="btnDisplay_Click"/>
+        <TextBox x:Name="testdisplay" HorizontalAlignment="Left" Margin="30,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnRemoveIndex" Content="Remove" HorizontalAlignment="Left" Margin="189,127,0,0" VerticalAlignment="Top" Click="btnRemoveIndex_Click"/>
+        <TextBox x:Name="textremovebyindex" HorizontalAlignment="Left" Margin="30,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnRemoveItem" Content="Remove" HorizontalAlignment="Left" Margin="189,197,0,0" VerticalAlignment="Top" Click="btnRemoveItem_Click"/>
+        <TextBox x:Name="textremovebyitem" HorizontalAlignment="Left" Margin="24,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnRemoveRange" Content="Remove" HorizontalAlignment="Left" Margin="189,265,0,0" VerticalAlignment="Top" Click="btnRemoveRange_Click"/>
+        <TextBox x:Name="textrangefirst" HorizontalAlignment="Left" Margin="24,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
+        <Button x:Name="btnClear" Content="Clear List" HorizontalAlignment="Left" Margin="44,365,0,0" VerticalAlignment="Top" Width="185" Click="btnClear_Click"/>
+        <TextBox x:Name="textrangesecond" HorizontalAlignment="Left" Margin="95,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
+        <Label Content="remove by item" HorizontalAlignment="Left" Margin="44,103,0,0" VerticalAlignment="Top" Width="92" Height="13"/>
+        <Label Content="add to list" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.345,-7.151" Height="11" Width="70"/>
+        <Label Content="remove range" HorizontalAlignment="Left" Margin="65,236,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label Content="remove iteml" HorizontalAlignment="Left" Margin="48,166,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="remove index" HorizontalAlignment="Left" Margin="42,108,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label Content="display by index in pop up" HorizontalAlignment="Left" Margin="24,57,0,0" VerticalAlignment="Top" Width="152"/>
+        <Label Content="Add to list" HorizontalAlignment="Left" Margin="48,8,0,0" VerticalAlignment="Top" Width="88"/>
+        <RichTextBox Margin="400,-5,0,15">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="textbox" Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
